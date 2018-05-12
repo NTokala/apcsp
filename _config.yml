@@ -5,3 +5,6 @@ author: ntokala
 email: nikhiltokala1@gmail.com
 description: Review for the AP test
 github_username: ntokala
+
+plugins: 
+  - jemoji
