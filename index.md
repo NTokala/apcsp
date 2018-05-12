@@ -1,3 +1,1 @@
----
-page.title: APCSP Study Guide
----
+title: APCSP Study Guide
