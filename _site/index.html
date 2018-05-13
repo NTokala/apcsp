@@ -3,20 +3,28 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>APCSP Study Guide | Review for the AP test</title>
+<title>APCSP Study Guide | AP® is a trademark registered/owned by the College Board, which is not affiliated with, and does not endorse, this site.</title>
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="APCSP Study Guide" />
 <meta name="author" content="ntokala" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Review for the AP test" />
-<meta property="og:description" content="Review for the AP test" />
+<meta name="description" content="AP® is a trademark registered/owned by the College Board, which is not affiliated with, and does not endorse, this site." />
+<meta property="og:description" content="AP® is a trademark registered/owned by the College Board, which is not affiliated with, and does not endorse, this site." />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="APCSP Study Guide" />
 <script type="application/ld+json">
-{"name":"APCSP Study Guide","description":"Review for the AP test","author":{"@type":"Person","name":"ntokala"},"@type":"WebSite","url":"http://localhost:4000/","headline":"APCSP Study Guide","@context":"http://schema.org"}</script>
+{"name":"APCSP Study Guide","description":"AP® is a trademark registered/owned by the College Board, which is not affiliated with, and does not endorse, this site.","author":{"@type":"Person","name":"ntokala"},"@type":"WebSite","url":"http://localhost:4000/","headline":"APCSP Study Guide","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="APCSP Study Guide" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="APCSP Study Guide" /><!-- Load jQuery -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Load KaTeX -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+
+</head>
+
+
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">APCSP Study Guide</a><nav class="site-nav">
@@ -31,12 +39,15 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">APCSP Study Guide</a></div>
+        <div class="trigger"></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h1 class="page-heading">APCSP Study Guide</h1><h1 id="welcome">Welcome</h1>
+        <div class="home"><p> </p>
+<h2 id="hello-world">Hello World</h2>
+
+<p>ujkj</p>
 </div>
 
       </div>
@@ -50,20 +61,38 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">ntokala</li><li><a class="u-email" href="mailto:nikhiltokala1@gmail.com">nikhiltokala1@gmail.com</a></li></ul>
+          <li class="p-name">ntokala</li></ul>
       </div>
 
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/ntokala"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">ntokala</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>Review for the AP test</p>
+        <p>AP® is a trademark registered/owned by the College Board, which is not affiliated with, and does not endorse, this site.</p>
       </div>
     </div>
 
   </div>
 
-</footer>
-</body>
+  <script type="text/javascript">
+$("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(tex) +
+           "</span>";
+});
+
+$("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<div class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+tex) +
+           "</div>";
+});
+</script>
+
+
+</footer></body>
 
 </html>
