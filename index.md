@@ -33,15 +33,38 @@ We could say that <span style="color: blue">$$2$$</span><span style="color: red"
 **In general, where $$A_{1}, A_{2},\text{...} A_{N}$$ are digits and $$B$$ is the base of the number,** $$A_{1}A_{2}A_{3}\text{...}A_{N_B} = A_{1}\times B^{N-1} + A_{2}\times B^{N-2} + \text{...} + A_{N-1}\times B^{1} + A_{N}\times B^{0}$$
 
 <span style="color: orange">$$B$$</span>$$^{N}$$ represents the amount of **unique values** a number with base <span style="color: orange">$$B$$</span>
- and a maximum of $$N$$ digits can represent. For example, a binary number with 5 digits can represent $$2^{5} = 32$$ values (from $$00000_{2}$$ to $$11111_{2}$$.) A common question is *"How many times more values can a 16 digit binary number hold over a 4 digit binary number?"* The answer is $$\frac{2^{16}}{2^{4}} = 2^{12}$$.
+ and a maximum of $$N$$ digits can represent. For example, a binary number with 5 digits can represent $$2^{5} = 32$$ values (from $$00000_{2}$$ to $$11111_{2}$$.) 
+
+ :grey_question:*"How many times more values can a 16 digit binary number hold over a 4 digit binary number?"*
+
+  The answer is $$\frac{2^{16}}{2^{4}} = 2^{12}$$.
 
 **ASCII** (American Standard Code for Information Interchange) is a raw text format. It maps numerical values to **characters**. [Familiarize yourself with the table (don't memorize it!)](https://www.asciitable.com/). Know that uppercase letters have *smaller values* than lowercase letters.
 
-**Hexadecimal** values have base $$16$$. Each digit can represent $$16$$ values, $$0$$-$$F$$. Since $$2^{4} = 16$$, each digit of a hexadecimal value represents 4 bits. Subsequently, 2 digits represent a byte. Hexadecimal is used because it can represent more information per digit than binary or decimal. A common use of hexadecimal is to represent **color values**. 
+**Hexadecimal** values have base $$16$$. Each digit can represent $$16$$ values, $$0$$-$$F$$. Since $$2^{4} = 16$$, each digit of a hexadecimal value represents 4 bits. Subsequently, 2 digits represent a byte (4 bits for each digit). 
+**Hexadecimal is used because it can represent more information per digit than binary or decimal.**
 
-<span style="color: orange"> </span>
+A common use of hexadecimal is to represent **color values** through **color codes** 6-digit hexadecimal values. These values are based on the **<span style="color: red">R</span><span style="color: green">G</span><span style="color: blue">B</span> color model.** The screen you are looking at right now adds red, green, and blue light together to represent color.
+
+<span style="color: red">Byte 1 represents the red value. </span><span style="color: green">Byte 2 represents the green value.</span> <span style="color: blue">Byte 3 represents the blue value.</span> 
+
+#### # <span style="color: red">__ __ </span><span style="color: green">__ __ </span><span style="color: blue">__ __ </span>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; This is the standard form of a color code, or hex code.
+
+ :grey_question:*"Which color code has the highest green intensity?"* <span style="color: #B7E287">`#B7E287`</span> <span style="color: #EFBD27">`#EFBD27`</span> <span style="color: #013CFF">`#013CFF`</span>
+
+The second byte represents <span style="color: green">green</span>, so compare those: `E2``BD``3C`
 
 
+
+<span style="color: orange"></span>
+
+
+
+~~~ ruby
+def what?
+  42
+end
+~~~
 
 
 `Kramdown::Document.new(text).to_html`

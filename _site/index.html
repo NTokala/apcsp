@@ -130,13 +130,33 @@ We could say that <span style="color: blue"><script type="math/tex">2</script></
 <p><strong>In general, where <script type="math/tex">A_{1}, A_{2},\text{...} A_{N}</script> are digits and <script type="math/tex">B</script> is the base of the number,</strong> <script type="math/tex">A_{1}A_{2}A_{3}\text{...}A_{N_B} = A_{1}\times B^{N-1} + A_{2}\times B^{N-2} + \text{...} + A_{N-1}\times B^{1} + A_{N}\times B^{0}</script></p>
 
 <p><span style="color: orange"><script type="math/tex">B</script></span><script type="math/tex">^{N}</script> represents the amount of <strong>unique values</strong> a number with base <span style="color: orange"><script type="math/tex">B</script></span>
- and a maximum of <script type="math/tex">N</script> digits can represent. For example, a binary number with 5 digits can represent <script type="math/tex">2^{5} = 32</script> values (from <script type="math/tex">00000_{2}</script> to <script type="math/tex">11111_{2}</script>.) A common question is <em>“How many times more values can a 16 digit binary number hold over a 4 digit binary number?”</em> The answer is <script type="math/tex">\frac{2^{16}}{2^{4}} = 2^{12}</script>.</p>
+ and a maximum of <script type="math/tex">N</script> digits can represent. For example, a binary number with 5 digits can represent <script type="math/tex">2^{5} = 32</script> values (from <script type="math/tex">00000_{2}</script> to <script type="math/tex">11111_{2}</script>.)</p>
+
+<p><img class="emoji" title=":grey_question:" alt=":grey_question:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2754.png" height="20" width="20"><em>“How many times more values can a 16 digit binary number hold over a 4 digit binary number?”</em></p>
+
+<p>The answer is <script type="math/tex">\frac{2^{16}}{2^{4}} = 2^{12}</script>.</p>
 
 <p><strong>ASCII</strong> (American Standard Code for Information Interchange) is a raw text format. It maps numerical values to <strong>characters</strong>. <a href="https://www.asciitable.com/">Familiarize yourself with the table (don’t memorize it!)</a>. Know that uppercase letters have <em>smaller values</em> than lowercase letters.</p>
 
-<p><strong>Hexadecimal</strong> values have base <script type="math/tex">16</script>. Each digit can represent <script type="math/tex">16</script> values, <script type="math/tex">0</script>-<script type="math/tex">F</script>. Since <script type="math/tex">2^{4} = 16</script>, each digit of a hexadecimal value represents 4 bits. Subsequently, 2 digits represent a byte. Hexadecimal is used because it can represent more information per digit than binary or decimal. A common use of hexadecimal is to represent <strong>color values</strong>.</p>
+<p><strong>Hexadecimal</strong> values have base <script type="math/tex">16</script>. Each digit can represent <script type="math/tex">16</script> values, <script type="math/tex">0</script>-<script type="math/tex">F</script>. Since <script type="math/tex">2^{4} = 16</script>, each digit of a hexadecimal value represents 4 bits. Subsequently, 2 digits represent a byte (4 bits for each digit). 
+<strong>Hexadecimal is used because it can represent more information per digit than binary or decimal.</strong></p>
 
-<p><span style="color: orange"> </span></p>
+<p>A common use of hexadecimal is to represent <strong>color values</strong> through <strong>color codes</strong> 6-digit hexadecimal values. These values are based on the <strong><span style="color: red">R</span><span style="color: green">G</span><span style="color: blue">B</span> color model.</strong> The screen you are looking at right now adds red, green, and blue light together to represent color.</p>
+
+<p><span style="color: red">Byte 1 represents the red value. </span><span style="color: green">Byte 2 represents the green value.</span> <span style="color: blue">Byte 3 represents the blue value.</span></p>
+
+<h4 id="-__-__-__-__-__-__----------this-is-the-standard-form-of-a-color-code-or-hex-code"># <span style="color: red">__ __ </span><span style="color: green">__ __ </span><span style="color: blue">__ __ </span>                This is the standard form of a color code, or hex code.</h4>
+
+<p><img class="emoji" title=":grey_question:" alt=":grey_question:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2754.png" height="20" width="20"><em>“Which color code has the highest green intensity?”</em> <span style="color: #B7E287"><code class="highlighter-rouge">#B7E287</code></span> <span style="color: #EFBD27"><code class="highlighter-rouge">#EFBD27</code></span> <span style="color: #013CFF"><code class="highlighter-rouge">#013CFF</code></span></p>
+
+<p>The second byte represents <span style="color: green">green</span>, so compare those: <code class="highlighter-rouge">E2</code><code class="highlighter-rouge">BD</code><code class="highlighter-rouge">3C</code></p>
+
+<p><span style="color: orange"></span></p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">what?</span>
+  <span class="mi">42</span>
+<span class="k">end</span>
+</code></pre></div></div>
 
 <p><code class="highlighter-rouge">Kramdown::Document.new(text).to_html</code></p>
 </div>
