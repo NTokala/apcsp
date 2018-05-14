@@ -1,13 +1,14 @@
 theme: minima
 
 title: APCSP Study Guide
-author: ntokala
-description: AP® is a trademark registered/owned by the College Board, which is not affiliated with, and does not endorse, this site.
+author: Nikhil Tokala
+description: AP Computer Science Principles (APCSP) study guide for the AP test.
 github_username: ntokala
 url: ""
 
 plugins: 
   - jemoji
+  - jekyll-mentions
 
 markdown: kramdown
 kramdown:
